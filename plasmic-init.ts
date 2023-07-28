@@ -1,10 +1,13 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { registerAll } from "@plasmicpkgs/commerce";
+import { registerCommerceProvider as registerBigCommerce } from "@/commerce/bigcommerce";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
       id: "jTKbAFLJzNqzk5Sx157Ti8",
-      token: "KFchRf4qByVG7ZtP3nWWpzgKZK7VvvZCpqNOSPIBZaDVLgmvEKMf6hv1ySIRQCQGlU0WFosCNU0pVojBLQ",
+      token:
+        "KFchRf4qByVG7ZtP3nWWpzgKZK7VvvZCpqNOSPIBZaDVLgmvEKMf6hv1ySIRQCQGlU0WFosCNU0pVojBLQ",
     },
   ],
 
@@ -23,3 +26,5 @@ export const PLASMIC = initPlasmicLoader({
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // PLASMIC.registerComponent(...);
+registerAll(PLASMIC);
+registerBigCommerce(PLASMIC);
