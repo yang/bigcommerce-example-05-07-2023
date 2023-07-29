@@ -77,6 +77,7 @@ export const handler: SWRHook<SearchProductsHook> = {
           ],
           swrOptions: {
             revalidateOnFocus: false,
+            revalidateIfStale: false,
             ...input.swrOptions,
           },
         })

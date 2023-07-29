@@ -33,6 +33,7 @@ export const handler: SWRHook<GetProductHook> = {
                     ],
                     swrOptions: {
                         revalidateOnFocus: false,
+                        revalidateIfStale: false,
                         ...input.swrOptions,
                     },
                 })
