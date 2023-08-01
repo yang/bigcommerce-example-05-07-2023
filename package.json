@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/host": "^1.0.155",
-    "@plasmicapp/loader-nextjs": "^1.0.302",
+    "@plasmicapp/host": "^1.0.157",
+    "@plasmicapp/loader-nextjs": "^1.0.304",
     "@plasmicpkgs/commerce": "^0.0.151",
     "@types/cookie": "^0.5.1",
     "@types/js-cookie": "^3.0.3",
